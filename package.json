@@ -1,0 +1,38 @@
+{
+  "name": "schoolmanagment",
+  "version": "0.1.0",
+  "description": "School Management Software",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tasajjad/schoolManagementAPI.git"
+  },
+  "keywords": [
+    "tasajjad"
+  ],
+  "author": "Sajjad Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tasajjad/schoolManagementAPI/issues"
+  },
+  "homepage": "https://github.com/tasajjad/schoolManagementAPI#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.7",
+    "multer": "^1.4.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+  }
+}
