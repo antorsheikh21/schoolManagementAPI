@@ -46,6 +46,7 @@ const adminSchema = new Schema({
 
 }, { timestamps: true })
 
+
 adminSchema.methods.generateJWT = function () {
     return token = jwt.sign({
         _id: this._id,
