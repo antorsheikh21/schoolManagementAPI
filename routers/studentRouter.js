@@ -5,13 +5,20 @@ const {
     deleteStudentById,
     getStudentById,
     updateStudentById,
-    addImageById
+    addImageById,
+    loginUserByPhone
 } = require('../controllers/students/studentController')
 
 const upload = require('../middlewares/studentAddImage')
 router.route('/user')
-    .post(createStudent)
     .get(getAllStudents)
+
+
+router.route('/user/auth/login')
+    .post(loginUserByPhone)
+
+router.route('/user/auth/signup')
+    .post(createStudent)
 
 
 router.route('/user/:id')

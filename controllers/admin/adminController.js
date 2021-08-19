@@ -114,3 +114,7 @@ module.exports.editAdminProfile = async function (req, res) {
 
     }
 }
+
+module.exports.adminSecretChange = async function (req, res) {
+
+}

@@ -48,7 +48,6 @@ const studentSchema = new Schema({
     },
     password: {
         type: String,
-        default: "1234"
     }
 })
 
