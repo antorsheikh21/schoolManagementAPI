@@ -12,6 +12,8 @@ const defaultError = require('./errors/defaultError')
 const notFound = require('./errors/notFound');
 const adminRouter = require('./routers/adminRouter')
 const studentRouter = require('./routers/studentRouter')
+const teacherRouter = require('./routers/teacherRouter')
+const studentByClassRoute = require('./routers/filterStudentRouter')
 
 app.use(express.json())
 if (process.env.NODE_ENV === 'development') {
@@ -25,6 +27,9 @@ app.use('/api/admin', adminRouter)
 
 app.use('/api', studentRouter)
 
+app.use('/api', teacherRouter)
+
+app.use('/api', studentByClassRoute)
 
 
 
